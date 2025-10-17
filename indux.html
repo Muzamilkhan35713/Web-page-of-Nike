@@ -41,16 +41,64 @@
         </div>
         <div class="content-right">
             <div class="product">
-                <img src="imge/Nike-Air-Force-1-40th-DQ7658-100-2.webp" alt="nike">
-                <h3>Nike Air Force 1</h3>
+                <img src="imge/WMNS+NIKE+AIR+FORCE+1+'07.avif" alt="nike">
+                <h4>Nike Air Force 1</h4>
+                <p class="catagory">Man Shoes</p>
+                <p class="colour">Green</p>
+                <p>$95.00</p>
+            </div>
+         <div class="product">
+                <img src="imge/air-force-1-big-kids-shoes-thlmc2.avif" alt="nike">
+                <h4>Nike Air Force 1</h4>
                 <p class="catagory">Man Shoes</p>
                 <p class="colour">White</p>
                 <p>$90.00</p>
-                <button>Add to Cart</button>
+            </div>
+             <div class="product">
+                <img src="imge/OIP (1).webp" alt="nike">
+                <h4>Nike Air Force 1</h4>
+                <p class="catagory">Man Shoes</p>
+                <p class="colour"> Sky Blue</p>
+                <p>$110.00</p>
+            </div>
+             <div class="product">
+                <img src="imge/OIP (2).webp" alt="nike">
+                <h4>Nike Air Force 1</h4>
+                <p class="catagory">Man Shoes</p>
+                <p class="colour">Bright red</p>
+                <p>$100.00</p>
+            </div>
+             <div class="product">
+                <img src="imge/OIP.webp" alt="nike">
+                <h4>Nike Air Force 1</h4>
+                <p class="catagory">Man Shoes</p>
+                <p class="colour">Tan</p>
+                <p>$120.00</p>
             </div>
         </div>
     </div>
 
    </div>
+</div>
+    <script>
+        // Enable vertical wheel to scroll the horizontal product list
+        (function(){
+            const scroller = document.querySelector('.content-right');
+            if(!scroller) return;
+
+            // When the mouse is over the element, translate vertical wheel to horizontal scroll
+            scroller.addEventListener('wheel', function(e){
+                // Only act on vertical scrolling (mouse wheel / trackpad)
+                if(Math.abs(e.deltaY) === 0) return;
+
+                // Prevent the page from also scrolling vertically
+                e.preventDefault();
+
+                // Scroll horizontally. Adjust the multiplier to taste.
+                const scrollAmount = e.deltaY;
+                scroller.scrollLeft += scrollAmount;
+            }, {passive: false});
+        })();
+    </script>
 </body>
 </html>
