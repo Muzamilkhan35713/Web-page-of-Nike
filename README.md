@@ -37,21 +37,6 @@ python -m http.server 8000
 
 Running a local server ensures the browser handles image and MIME types correctly.
 
-## Publish on GitHub Pages
-
-1. Push the repository to your GitHub account (if not already pushed).
-2. On GitHub, open the repository Settings → Pages.
-3. Under Source select the `main` branch and the root (`/`) folder, then Save.
-4. After a few minutes your site will be available at:
-
-```
-https://<your-username>.github.io/Web-page-of-Nike/
-```
-
-Replace `<your-username>` with your GitHub username.
-
-Note: This repository contains only static files; no build steps are required.
-
 ## Contact & contributions
 
 This is a personal demo project. For feedback, corrections or contributions, open an issue or contact the repository owner: `Muzamilkhan35713`.
